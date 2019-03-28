@@ -1,0 +1,36 @@
+<head>
+    <meta charset="utf-8">
+    <style> /* set the CSS */
+
+    .line {
+      fill: none;
+      stroke: white;
+      stroke-width: 1px;
+      stroke-opacity: 0.9;
+    }
+
+    </style>
+    <p>
+  <label for="nValue"
+         style="display: inline-block; width: 240px; text-align: right">
+         window = <span id="nValue-value"></span>
+  </label>
+    <input type="number" min="0" max="500" step="20" value="100" id="nValue">
+</p>
+</head>
+<title>RMS demo</title>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+<body>
+    <div id="n1"></div>
+
+    <div id="option">
+    <input name="rmsButton"
+           type="button"
+           value="Calculate RMS"
+           onclick="calcRMS()" />
+     </div>
+
+     <script src="app-emg.js"></script>
+</body>
